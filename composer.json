@@ -1,0 +1,48 @@
+{
+  "name": "chaoswey/taiwan-id-validator",
+  "description": "台灣身分證、統一編號驗證",
+  "keywords": [
+    "台灣身分證",
+    "台灣統一編號",
+    "taiwan id validator"
+  ],
+  "homepage": "https://github.com/chaoswey/taiwan-id-validator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "chaoswey",
+      "email": "armed1049@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chaoswey\\TaiwanIdValidator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chaoswey\\TaiwanIdValidator\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Chaoswey\\TaiwanIdValidator\\TaiwanIdValidatorServiceProvider"
+      ],
+      "aliases": {
+        "TaiwanIdValidator": "Chaoswey\\TaiwanIdValidator\\Facades\\TaiwanIdValidator"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
