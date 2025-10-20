@@ -1,11 +1,5 @@
-<?php namespace Chaoswey\TaiwanIdValidator\Tests;
+<?php
 
-use PHPUnit\Framework\TestCase;
-
-class TaiwanIdValidatorServiceProviderTest extends TestCase
-{
-    public function testRegister()
-    {
-        $this->assertTrue(true);
-    }
-}
+it('registers the service provider without errors', function () {
+    expect(true)->toBeTrue();
+});
